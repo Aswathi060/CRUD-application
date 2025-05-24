@@ -1,0 +1,130 @@
+/* Reset & base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #121212;
+  color: #e0e0e0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: #1e1e1e;
+  padding: 40px 50px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  color: #00d8ff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+button {
+  background: linear-gradient(90deg, #00d8ff, #0077b6);
+  color: #121212;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 28px;
+  margin: 0 10px 20px 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 216, 255, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 216, 255, 0.7);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+button:focus {
+  outline: 3px solid #00d8ff;
+  outline-offset: 3px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 25px;
+}
+
+li {
+  background: #292929;
+  padding: 18px 22px;
+  border-radius: 12px;
+  margin: 12px 0;
+  box-shadow: 0 3px 8px rgba(0, 216, 255, 0.25);
+  font-size: 1.1rem;
+  color: #a0e9ff;
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: #00d8ff22;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 14px 18px;
+  border: 2px solid #00d8ff66;
+  border-radius: 10px;
+  background: #121212;
+  color: #e0e0e0;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #6a6a6a;
+}
+
+input:focus, textarea:focus {
+  border-color: #00d8ff;
+  box-shadow: 0 0 10px #00d8ff99;
+  outline: none;
+}
+
+@media (max-width: 520px) {
+  .container {
+    padding: 30px 25px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  button {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+    margin: 10px 5px;
+  }
+}
